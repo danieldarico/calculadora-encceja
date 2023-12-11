@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora do Encceja 2023</title>
+</head>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora do Encceja 2023</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora do Encceja 2023</h1>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9IPDtxdNPG4?si=9j2o_eGvCDBX2dtV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <button onclick="mostrarPopup()">Clique aqui para liberar a calculadora</button>
+
+
+        <form id="enccejaCalculator" class="hidden">
+            <p class="info-text">Preencha apenas as disciplinas que você fez</p>
+            <label for="cienciasNatureza">Ciências da Natureza:</label>
+            <input type="number" id="cienciasNatureza" name="cienciasNatureza" max="200" oninput="validarInput(this)">
+            <small id="cienciasNaturezaError" class="error-message"></small>
+            
+            <label for="matematica">Matemática:</label>
+            <input type="number" id="matematica" name="matematica" max="200" oninput="validarInput(this)">
+            <small id="matematicaError" class="error-message"></small>
+            
+            <label for="linguagens">Linguagens e Códigos:</label>
+            <input type="number" id="linguagens" name="linguagens" max="200" oninput="validarInput(this)">
+            <small id="linguagensError" class="error-message"></small>
+            
+            <label for="redacao">Redação:</label>
+            <input type="number" id="redacao" name="redacao" max="10" oninput="validarInput(this)">
+            <small id="redacaoError" class="error-message"></small>
+            
+            <button id="calcularButton" type="button" onclick="calcularNota()">Calcular Resultado</button>
+        </form>
+
+        <!-- Pop-up para informações pessoais -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="fecharPopup()">&times;</span>
+                <label for="nomeCompleto">Nome Completo:</label>
+                <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="anoEdicao">Ano de Edição:</label>
+                <select id="anoEdicao" name="anoEdicao">
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                </select>
+
+                <button type="button" onclick="salvarInformacoes()">Liberar Calculadora</button>
+            </div>
+        </div>
+
+        <div id="resultado"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
