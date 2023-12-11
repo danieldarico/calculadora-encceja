@@ -72,12 +72,10 @@ button:hover {
     color: green;
 }
 
-/* Cores para a reprovação */
 .vermelho {
     color: red;
 }
 
-/* Cor para a mensagem de fazer novamente as provas */
 .azul {
     color: blue;
 }
@@ -106,10 +104,10 @@ button:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    padding: 30px; /* Aumentei o padding para tornar o pop-up maior */
+    padding: 30px; 
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centraliza o conteúdo no pop-up */
+    text-align: center; 
 }
 
 .close {
@@ -120,7 +118,6 @@ button:hover {
     cursor: pointer;
 }
 
-/* Adicionei estilos para alinhar o botão abaixo do campo "Ano de Edição" */
 #anoEdicao {
     margin-bottom: 20px;
     padding: 10px;
@@ -132,7 +129,7 @@ button:hover {
 
 button {
     display: block;
-    margin: 0 auto; /* Centraliza o botão */
+    margin: 0 auto;
     background-color: #4caf50;
     color: #fff;
     padding: 10px 20px;
@@ -145,7 +142,6 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Adicionei uma classe para ocultar o formulário inicialmente */
 .hidden {
     display: none;
 }
